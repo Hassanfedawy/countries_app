@@ -27,7 +27,7 @@ const SearchBar = ({ data, setSearchResults }) => {
           placeholder="Search for a country..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="border-none outline-none shadow-md py-4 px-28 pl-10 rounded-lg w-full dark:bg-Dark_Mode_Elements"
+          className="border-none outline-none shadow-md py-4 px-28 pl-10 rounded-lg w-full dark:bg-Dark_Mode_Elements dark:text-white"
         />
         {/* Search icon placed using absolute positioning */}
         <span className="absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-500">
@@ -65,8 +65,8 @@ const SearchBar = ({ data, setSearchResults }) => {
                                   border-b 
                                   last:border-none last:rounded-b-md
                                   flex cursor-pointer items-center
-                                  hover:bg-Light_Mode_Background text-Light_Mode_Text 
-                                   dark:bg-Dark_Mode_Elements dark:text-white">
+                                  hover:bg-gray-200 text-Light_Mode_Text 
+                                   dark:bg-Dark_Mode_Elements dark:text-white dark:hover:bg-gray-800">
                     <Image src={result.flags.svg} alt={result.name} width={30} height={50} className="mr-3" />
                     {result.name}
                   </li>

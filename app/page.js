@@ -17,13 +17,9 @@ export default function Home() {
   return (
     <div className="bg-Light_Mode_Background dark:bg-Dark_Mode_Background min-h-screen">
       <div className="flex justify-between p-5 items-center">
-        {/* Pass setSearchResults to SearchBar */}
         <SearchBar data={data} setSearchResults={setSearchResults} />
-        {/* Region component to select a region */}
         <Region setSelectedRegion={setSelectedRegion} />
       </div>
-
-      {/* CountriesFeed will display either filtered or unfiltered data */}
       <CountriesFeed data={filteredData} />
     </div>
   );

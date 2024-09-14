@@ -27,7 +27,9 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         <Nav/>
+        <Suspense fallback={<div>Loading...</div>}>
           {children}
+          </Suspense>
       </body>
     </html>
   );
